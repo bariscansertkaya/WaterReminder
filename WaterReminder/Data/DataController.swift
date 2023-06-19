@@ -23,10 +23,33 @@ class DataController: ObservableObject {
     func save(context: NSManagedObjectContext) {
         do {
             try context.save()
-            print("Success")
+            print("Data saved")
         }
         catch {
-            print("Error")
+            print("We couldn't save the data")
         }
     }
+    
+    func addDrink(quantity:Int, context:NSManagedObjectContext) {
+        let drink = Drink(context: context)
+        drink.id = UUID()
+        drink.date = Date()
+        drink.quantity = Int32(quantity)
+        
+        save(context: context)
+    }
+    
+    func deleteAllData(context:NSManagedObjectContext) {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Drink")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(deleteRequest)
+            save(context: context)
+        } catch {
+            print("Error deleting data: \(error)")
+        }
+    }
+    
+    
 }

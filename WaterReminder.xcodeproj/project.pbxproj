@@ -16,7 +16,10 @@
 		F538041A2A3B73220042DB7F /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53804192A3B73220042DB7F /* ChartsView.swift */; };
 		F538041D2A3B73600042DB7F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F538041C2A3B73600042DB7F /* ProfileView.swift */; };
 		F538041F2A3B74EC0042DB7F /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F538041E2A3B74EC0042DB7F /* CircularProgressBarView.swift */; };
-		F53804222A3B84F20042DB7F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53804202A3B84F20042DB7F /* DataModel.xcdatamodeld */; };
+		F53804242A3B95460042DB7F /* NewDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53804232A3B95460042DB7F /* NewDrinkView.swift */; };
+		F53804262A3B98200042DB7F /* DrinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53804252A3B98200042DB7F /* DrinkButtonView.swift */; };
+		F53804292A3C86280042DB7F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53804282A3C86280042DB7F /* BackgroundView.swift */; };
+		F5D610D82A3C8F0100911A62 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D610D62A3C8F0100911A62 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,10 @@
 		F53804192A3B73220042DB7F /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		F538041C2A3B73600042DB7F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F538041E2A3B74EC0042DB7F /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
-		F53804212A3B84F20042DB7F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		F53804232A3B95460042DB7F /* NewDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkView.swift; sourceTree = "<group>"; };
+		F53804252A3B98200042DB7F /* DrinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkButtonView.swift; sourceTree = "<group>"; };
+		F53804282A3C86280042DB7F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		F5D610D72A3C8F0100911A62 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		F53804032A3B6FD00042DB7F /* WaterReminder */ = {
 			isa = PBXGroup;
 			children = (
+				F53804272A3C86180042DB7F /* Helpers */,
 				F53804142A3B70350042DB7F /* Screens */,
 				F53804132A3B701C0042DB7F /* Views */,
 				F53804122A3B70170042DB7F /* Data */,
@@ -86,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F53804152A3B70440042DB7F /* DataController.swift */,
-				F53804202A3B84F20042DB7F /* DataModel.xcdatamodeld */,
+				F5D610D62A3C8F0100911A62 /* DataModel.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F538041E2A3B74EC0042DB7F /* CircularProgressBarView.swift */,
+				F53804252A3B98200042DB7F /* DrinkButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,8 +113,17 @@
 				F53804172A3B70B40042DB7F /* HomeView.swift */,
 				F53804192A3B73220042DB7F /* ChartsView.swift */,
 				F538041C2A3B73600042DB7F /* ProfileView.swift */,
+				F53804232A3B95460042DB7F /* NewDrinkView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		F53804272A3C86180042DB7F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F53804282A3C86280042DB7F /* BackgroundView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,13 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D610D82A3C8F0100911A62 /* DataModel.xcdatamodeld in Sources */,
 				F538041F2A3B74EC0042DB7F /* CircularProgressBarView.swift in Sources */,
-				F53804222A3B84F20042DB7F /* DataModel.xcdatamodeld in Sources */,
+				F53804292A3C86280042DB7F /* BackgroundView.swift in Sources */,
 				F53804072A3B6FD00042DB7F /* ContentView.swift in Sources */,
 				F53804182A3B70B40042DB7F /* HomeView.swift in Sources */,
 				F538041A2A3B73220042DB7F /* ChartsView.swift in Sources */,
 				F53804162A3B70440042DB7F /* DataController.swift in Sources */,
 				F538041D2A3B73600042DB7F /* ProfileView.swift in Sources */,
+				F53804262A3B98200042DB7F /* DrinkButtonView.swift in Sources */,
+				F53804242A3B95460042DB7F /* NewDrinkView.swift in Sources */,
 				F53804052A3B6FD00042DB7F /* WaterReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,12 +409,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F53804202A3B84F20042DB7F /* DataModel.xcdatamodeld */ = {
+		F5D610D62A3C8F0100911A62 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F53804212A3B84F20042DB7F /* DataModel.xcdatamodel */,
+				F5D610D72A3C8F0100911A62 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = F53804212A3B84F20042DB7F /* DataModel.xcdatamodel */;
+			currentVersion = F5D610D72A3C8F0100911A62 /* DataModel.xcdatamodel */;
 			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
